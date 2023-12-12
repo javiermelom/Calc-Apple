@@ -11,8 +11,8 @@ const number9 = document.getElementById("number9");
 
 const plus = document.getElementById("plus");
 const equal = document.getElementById("equal");
-
 const result = document.getElementById("result");
+let var1 = 0;
 
 let num0 = 0;
 let num1 = 1;
@@ -25,9 +25,24 @@ let num7 = 7;
 let num8 = 8;
 let num9 = 9;
 
-number1.addEventListener("onclick", function () {
+number1.addEventListener("click", function () {
   console.log(num1);
-  result.innerHTML += `<div>${num1}</div>`;
+  result.innerHTML += num1;
 });
 
+number2.addEventListener("click", function () {
+  console.log(num2);
+  result.innerHTML += `<div>${num2}</div>`;
+});
 
+number3.addEventListener("click", function () {
+  console.log(num3);
+  result.innerHTML += `<div>${num3}</div>`;
+});
+
+plus.addEventListener("click", function () {
+  var1 = parseInt(result.innerHTML);
+  console.log(var1);
+  result.innerHTML = 0;
+  console.log(result.innerHTML);
+});
